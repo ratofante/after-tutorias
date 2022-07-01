@@ -1,0 +1,13 @@
+// GENERALES
+@import "./general/reset";
+@import "./general/variables";
+@import "./general/breakpoints";
+
+// SECTIONS
+
+// COMPONENTES
+@import "./componentes/galeria";
+
+body {
+  background-color: $light;
+}

@@ -1,0 +1,72 @@
+.productos {
+	background-color: $clr-black;
+	padding: 1rem;
+	@include tablet {
+		display: flex;
+		flex-flow: row wrap;
+	}
+	@include desktop {
+		flex-flow: row-reverse wrap;
+	}
+}
+
+.producto {
+	$width: 300px;
+	background-color: $clr-yellow;
+	width: $width;
+	padding: calc($width * 0.05);
+	margin: 1rem auto;
+	border-radius: $borderRadius;
+	&:hover .producto__img img {
+		scale: 1.05;
+	}
+	&__img {
+		background-color: $clr-wine;
+		height: 220px;
+		border-radius: $borderRadius;
+		@include flexCenter;
+		padding: 1rem;
+		& img {
+			width: 100%;
+			transition: scale 200ms ease;
+		}
+	}
+	&__info {
+		/* codigo contenedor*/
+		& h4 {
+			font-family: $ff-alfa;
+			color: $clr-black;
+			margin-left: 0.25rem;
+		}
+		& p {
+			margin: 0.25rem;
+			font-family: $ff-poppins;
+		}
+	}
+	&__button {
+		@include flexCenter;
+		& button {
+			background-color: $clr-orange;
+			border: none;
+			font-size: 1rem;
+			font-family: $ff-poppins;
+			padding: 0.25rem 1rem;
+			border-radius: $borderRadius;
+			transition: background-color 200ms ease, color 200ms ease;
+			cursor: pointer;
+			&:hover {
+				background-color: $clr-black;
+				color: $clr-yellow;
+			}
+		}
+	}
+	@include tablet {
+		/* css para producto */
+		&__info {
+		}
+		&__img {
+		}
+	}
+	@include wide {
+	}
+}

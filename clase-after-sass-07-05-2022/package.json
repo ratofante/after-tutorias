@@ -1,0 +1,11 @@
+{
+  "name": "clase-after-sass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch ./scss/style.scss assets/css/style.css"
+  },
+  "author": "",
+  "license": "ISC"
+}

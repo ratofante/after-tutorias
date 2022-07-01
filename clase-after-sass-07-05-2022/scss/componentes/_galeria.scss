@@ -1,0 +1,28 @@
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 320px);
+  grid-template-rows: auto;
+  margin: auto;
+  padding-inline: 2rem;
+  justify-content: space-evenly;
+  grid-gap: 2rem;
+  width: 320px;
+  @include large {
+    width: 100%;
+  }
+  & .grid-items {
+    flex: 0 1 320px;
+    background-color: $light;
+    @include border-1;
+    & img {
+      width: 100%;
+      @include large {
+        width: 80%;
+        margin: auto;
+      }
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+}
