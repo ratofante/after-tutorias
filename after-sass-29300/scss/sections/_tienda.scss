@@ -1,0 +1,9 @@
+.tienda {
+	@include flexCenterColumn;
+	@include tablet {
+		flex-flow: wrap;
+	}
+	@include desktop {
+		flex-flow: wrap-reverse;
+	}
+}

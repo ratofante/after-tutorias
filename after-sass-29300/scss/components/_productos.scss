@@ -1,0 +1,40 @@
+.producto {
+	$padding-interno: 1.25rem;
+	$width: 340px;
+	width: $width;
+	background-color: $clr-gray-light;
+	padding: $padding-interno;
+	border: 2px solid $clr-gray-dark;
+	border-radius: $border-radius;
+	margin: 1rem auto;
+	&__img {
+		width: 100%;
+		& img {
+			width: 100%;
+			margin: auto;
+		}
+	}
+	&__info {
+		padding: $padding-interno;
+		& h3 {
+			font-family: $ff-headings;
+			color: $clr-dark;
+			margin-bottom: 1rem;
+		}
+		& p {
+			font-family: $ff-main;
+			color: $clr-brown;
+		}
+	}
+	&__button {
+		& button {
+			display: block;
+			padding: 0.25rem 1rem;
+			font-size: 1.2rem;
+			margin: auto;
+			border: none;
+			border-radius: $border-radius;
+			background-color: $clr-white;
+		}
+	}
+}
